@@ -182,6 +182,7 @@ function! g:GitSessionLoad(...)
         echom "session not found:" l:file
     endif
     redrawstatus!
+    execute 'source' '~/.vimrc'
 endfunction
 
 function! g:GitSessionDelete()
